@@ -1,24 +1,32 @@
 {
+  "name": "led-remote-v2",
   "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "async-mqtt": "^2.6.2",
-    "axios": "^0.26.1",
-    "next": "latest",
-    "next-pwa": "^5.4.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "yarn build && vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.json"
   },
   "devDependencies": {
-    "@types/node": "17.0.4",
-    "@types/react": "17.0.38",
-    "autoprefixer": "^10.4.4",
-    "postcss": "^8.4.12",
-    "tailwindcss": "^3.0.23",
-    "typescript": "4.5.4"
+    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.30",
+    "@tsconfig/svelte": "^2.0.1",
+    "@zerodevx/svelte-toast": "^0.7.2",
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "svelte": "^3.44.0",
+    "svelte-check": "^2.2.7",
+    "svelte-preprocess": "^4.9.8",
+    "tailwindcss": "^3.1.4",
+    "tslib": "^2.3.1",
+    "typescript": "^4.5.4",
+    "vite": "^2.9.9",
+    "vite-plugin-pwa": "^0.12.0",
+    "workbox-precaching": "^6.5.3"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "mqtt": "^4.3.7"
   }
 }

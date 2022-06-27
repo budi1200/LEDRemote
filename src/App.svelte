@@ -31,7 +31,7 @@
 <main>
   <div>
     <main>
-      <div class={"border-4 border-black p-3 select-none w-screen max-w-md"}>
+      <div class={"border-4 border-black p-3 select-none w-screen max-w-md mx-auto"}>
         <div class={"grid grid-cols-2 gap-2"}>
           <div class={"bg-black flex justify-between rounded-lg"}>
             <RemoteButton name={"BPlus"} icon={"brightness_up.svg"} click={sendSignal}/>

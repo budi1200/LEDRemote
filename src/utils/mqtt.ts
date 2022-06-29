@@ -63,7 +63,7 @@ export const getMqttConnection = async () => {
       password: import.meta.env.VITE_MQTT_PASSWORD,
       hostname: import.meta.env.VITE_MQTT_HOSTNAME,
       port: parseInt(import.meta.env.MQTT_PORT ?? "9001"),
-      protocol: "ws"
+      protocol: import.meta.env.VITE_MQTT_PROTOCOL ?? "ws"
     }
 
     cachedConnection.promise = Promise.race([connectAsync("/", opts), getTimeoutPromise()])
